@@ -1,7 +1,9 @@
 # Chating app Exmaple
 
 There are two Directories in this repo for Two react-native apps: /app1 & /app2 those will be used to build a simple Room-based chatting app.
-REST/GraphQL APIs and Websocket are already setup and the integration Guide can be found here.
+REST/GraphQL APIs and Websocket are already setup and the integration Guides can be found in Below links:
+- REST/GraphQL: https://docs.directus.io/reference/introduction.html
+- Websocket: https://docs.directus.io/guides/real-time.html
 
 Requirements List:
 - View Rooms List assigned to the current logged-in user
@@ -17,6 +19,20 @@ Non-Functional Requirements:
 - Implement Pagination
 - Message text length is 100 charecter
 - Handle the Disconnection of websocket in all levels and causes (No internet, app in background..etc)
+
+Data structure:
+- Collection "room":
+    - Colmun: "id" => Number - auto-generated
+    - Colmun: "members" => Relationship - many-to-many with "directus_users" collection
+    - Colmun: "last_message" => Relationship - one-to-one with "message" collection
+    - Colmun: "name" => String
+    - Colmun: "date_created" => Date
+- Collection "message":
+    - Colmun: "id" => Number - auto-generated
+    - Colmun: "user_created" => Relationship - one-to-one with "directus_users" Collection
+    - Colmun: "data_created" => Date
+    - Colmun: "content" => String
+    - Colmun: "room" => Relationship - one-to-one relationship with "room" collection
 
 Each app must be Implemented differently as following:
 
