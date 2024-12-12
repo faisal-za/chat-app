@@ -48,7 +48,7 @@ In "App1", You are free to build it as you like but considering some implmentati
 
 in "App2", You will Follow the Below implementaions to Build the App:
 - Use Typescript.
-- Project structure: Follow the pre-defined structure.
+- Project structure: Follow the structure: src/screens/* , src/component/* , src/store/* , src/service/*
 - React component: Functional Component.
 - API Protocol: GraphQL.
 
