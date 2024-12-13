@@ -34,7 +34,13 @@ Data structure:
     - Colmun: "content" => String
     - Colmun: "room" => Relationship - one-to-one relationship with "room" collection
 
-Each app must be Implemented differently as following:
+Authentication:
+- You should Already receive 2 Access Tokens. for different 2 users.
+- Refer to the following Guides of APIs Authentication:
+  a. Websocket: https://docs.directus.io/guides/real-time/authentication.html
+  b. REST/GraphQL: https://docs.directus.io/reference/authentication.html
+
+Each App must be Implemented differently as following:
 
 In "App1", You are free to build it as you like but considering some implmentation:
 - Use Javascript.
@@ -53,6 +59,7 @@ in "App2", You will Follow the Below implementaions to Build the App:
 - API Protocol: GraphQL.
 
 Notes:
+- Rooms and Users are already created in the Database. you have 3 chat rooms to work with
 - You are free to use any library for any purpose, except what has been specfied.
 - Clone this repo and start working on a new branch (branch name is your username)
 - Use the compoenent library of your choice (ex: Nativebase)
