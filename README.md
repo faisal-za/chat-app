@@ -39,6 +39,7 @@ Authentication:
 - Refer to the following Guides of APIs Authentication:
   a. Websocket: https://docs.directus.io/guides/real-time/authentication.html
   b. REST/GraphQL: https://docs.directus.io/reference/authentication.html
+- API URL: https://cms.tetaman.app
 
 Each App must be Implemented differently as following:
 
