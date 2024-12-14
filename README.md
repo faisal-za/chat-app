@@ -11,7 +11,6 @@ Requirements List:
 - Send/receive messages in real-time through the chat room
 
 Requirements in term of Pages:
-- Login page
 - Rooms List page
 - Messages List page
 
